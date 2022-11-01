@@ -31,8 +31,20 @@ public class EmployeeWage {
 		
 	    monthlywage = workingday*160;
 	    System.out.println("Monthly wage for  daily employee is :"+monthlywage);
-		}
+	    
+	   
+	    int maxworkinghr = 100;
+	    int wage = 20;
+	    int maxdays = 20;
+	   
+	    System.out.println("Maximum wage :");
+	   
+	    	if ((maxworkinghr*wage)>=(maxdays*wage)) {
+	    	System.out.println(maxworkinghr*wage);
+	    	}
+	    
 	}
-	
+	}
+
 	
 
