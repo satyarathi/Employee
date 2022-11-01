@@ -12,7 +12,7 @@ public class EmployeeWage {
 	public static void main(String[] args) {
 		System.out.println("Welcome");
 		Random attendance = new Random(); 
-		int i = attendance.nextInt(2);
+		int i = attendance.nextInt(2);		
 		if(i == 0) {
 			System.out.println("Employee is Abscent");
 			EmployeeWage dw = new EmployeeWage();
@@ -20,10 +20,19 @@ public class EmployeeWage {
 		} else {
 			System.out.println("Employee is Present");
 			EmployeeWage dw = new EmployeeWage();
-			dw.dailyWage(20, 8);
+			dw.dailyWage(20, 8);	
 		}
 		EmployeeWage pt = new EmployeeWage();
 		System.out.println("Number of part time employee :"+pt.parttimeemployee);
-		System.out.println("Wage of part time employee :"+pt.partwage);
+		System.out.println("Wage of part time employee per day  :"+pt.partwage);
+		
+		int workingday = 20;
+		int monthlywage = 0;
+		
+	    monthlywage = workingday*160;
+	    System.out.println("Monthly wage for  daily employee is :"+monthlywage);
+		}
 	}
-}
+	
+	
+
